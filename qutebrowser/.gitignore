@@ -2,5 +2,7 @@
 *
 !autoconfig.yml
 !config.py
+!greasemonkey
+!greasemonkey/*
 
 !.git*
