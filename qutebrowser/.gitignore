@@ -1,0 +1,6 @@
+# Ignore everything to prevent committing sensitive data :)
+*
+!autoconfig.yml
+!config.py
+
+!.git*

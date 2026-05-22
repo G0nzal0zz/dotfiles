@@ -1,0 +1,13 @@
+*
+!fish
+!ghostty
+!hypr
+!nvim
+!qutebrowser
+!tmux
+!waybar
+!wofi
+!yazi
+
+# .gitmodules, .gitignore...
+!.git*
