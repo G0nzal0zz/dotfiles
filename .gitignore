@@ -1,13 +1,26 @@
+# Ignore everything at the root level
 *
-!fish
-!ghostty
-!hypr
-!nvim
-!qutebrowser
-!tmux
-!waybar
-!wofi
-!yazi
 
-# .gitmodules, .gitignore...
+# Allow the specific folders
+!fish/
+!ghostty/
+!hypr/
+!nvim/
+!qutebrowser/
+!tmux/
+!waybar/
+!wofi/
+!yazi/
+
+# Allow all contents inside specific folders
+!fish/**
+!ghostty/**
+!hypr/**
+!nvim/**
+!qutebrowser/**
+!tmux/**
+!waybar/**
+!wofi/**
+!yazi/**
+
 !.git*
