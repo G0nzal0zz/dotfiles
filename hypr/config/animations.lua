@@ -74,7 +74,7 @@ hl.animation({
 })
 hl.config({
     animations = {
-        enabled = true,
+        enabled = false,
         -- Windows
         -- Borders
         -- Workspaces — disabled

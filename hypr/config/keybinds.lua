@@ -143,29 +143,15 @@ hl.bind(mainMod .. " + 7", hl.dsp.focus({ workspace = 7 }), { description = "Swi
 hl.bind(mainMod .. " + 8", hl.dsp.focus({ workspace = 8 }), { description = "Switch to workspace 8" })
 hl.bind(mainMod .. " + 9", hl.dsp.focus({ workspace = 9 }), { description = "Switch to workspace 9" })
 hl.bind(mainMod .. " + 0", hl.dsp.focus({ workspace = 10 }), { description = "Switch to workspace 10" })
--- Scroll through existing workspaces with mainMod + , or .
-hl.bind(mainMod .. " + PERIOD", hl.dsp.focus({ workspace = "e+1" }), { description = "Scroll through workspaces incrementally" })
-hl.bind(mainMod .. " + COMMA", hl.dsp.focus({ workspace = "e-1" }), { description = "Scroll through workspaces decrementally" })
+
 -- With $mainMod + scroll
 hl.bind(mainMod .. " + mouse_down", hl.dsp.focus({ workspace = "e+1" }), { description = "Scroll through workspaces incrementally" })
 hl.bind(mainMod .. " + mouse_up", hl.dsp.focus({ workspace = "e-1" }), { description = "Scroll through workspaces decrementally" })
 hl.bind(mainMod .. " + slash", hl.dsp.focus({ workspace = "previous" }), { description = "Switch to the previous workspace" })
+
 -- Special workspaces (scratchpads)
 hl.bind(mainMod .. " + minus", hl.dsp.window.move({ workspace = "special" }), { description = "Move active window to Special workspace" })
 hl.bind(mainMod .. " + equal", hl.dsp.workspace.toggle_special("special"), { description = "Toggles the Special workspace" })
 hl.bind(mainMod .. " + F1", hl.dsp.workspace.toggle_special("scratchpad"), { description = "Call special workspace scratchpad" })
 hl.bind(mainMod .. " + ALT + SHIFT + F1", hl.dsp.window.move({ workspace = "special:scratchpad", follow = false }), { description = "Move active window to special workspace scratchpad" })
-
--- ======= Additional Settings =======
-
--- https://wiki.hyprland.org/Configuring/Binds
-hl.config({
-    binds = {
-        allow_workspace_cycles = 1,
-        workspace_back_and_forth = 1,
-        workspace_center_on = 1,
-        movefocus_cycles_fullscreen = true,
-        window_direction_monitor_fallback = true,
-    },
-})
 
