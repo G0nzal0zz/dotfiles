@@ -23,11 +23,12 @@
     color: @foreground-inactive;
 }
 
-#memory,
+#cpu,
 #custom-platform-profile {
     padding-left: 1em
 }
 
+#memory,
 #wireplumber,
 #battery,
 #idle_inhibitor,
