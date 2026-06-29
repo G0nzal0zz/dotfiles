@@ -2,7 +2,6 @@
 -- ┃                 CachyOS Hyprland Configuration              ┃
 -- ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
 
-
 require("config.animations")
 require("config.autostart")
 require("config.decorations")

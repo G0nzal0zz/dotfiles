@@ -2,15 +2,17 @@
 -- ┃                         Keybinds                            ┃
 -- ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
 
+mainMod = "SUPER"
+
 require("config.defaults")
 
 -- https://wiki.hyprland.org/Configuring/Binds/
-hl.bind(mainMod .. " + RETURN", hl.dsp.exec_cmd("GTK_IM_MODULE=simple $terminal"), { description = "Opens your preferred terminal emulator ($terminal)" })
-hl.bind(mainMod .. " + E", hl.dsp.exec_cmd("$filemanager"), { description = "Opens your preferred filemanager ($filemanager)" })
+hl.bind(mainMod .. " + RETURN", hl.dsp.exec_cmd("GTK_IM_MODULE=simple " .. terminal), { description = "Opens your preferred terminal emulator ($terminal)" })
+hl.bind(mainMod .. " + E", hl.dsp.exec_cmd(filemanager), { description = "Opens your preferred filemanager ($filemanager)" })
 hl.bind(mainMod .. " + Q", hl.dsp.window.close(), { description = "Closes (not kill) current window" })
 hl.bind(mainMod .. " + SHIFT + M", hl.dsp.exec_cmd("loginctl terminate-user \"\""), { description = "Exits Hyprland by terminating the user sessions" })
 hl.bind(mainMod .. " + V", hl.dsp.window.float({ action = "toggle" }), { description = "Switches current window between floating and tiling mode" })
-hl.bind(mainMod .. " + SPACE", hl.dsp.exec_cmd("$applauncher"), { description = "Runs your application launcher" })
+hl.bind(mainMod .. " + SPACE", hl.dsp.exec_cmd(applauncher), { description = "Runs your application launcher" })
 hl.bind(mainMod .. " + F", hl.dsp.window.fullscreen({ mode = "fullscreen", action = "toggle" }), { description = "Toggles current window fullscreen mode" })
 hl.bind(mainMod .. " + Y", hl.dsp.window.pin(), { description = "Pin current window (shows on all workspaces)" })
 hl.bind(mainMod .. " + N", hl.dsp.layout("togglesplit, "), { description = "Toggles current window split mode" })
